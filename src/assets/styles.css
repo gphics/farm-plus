@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: black;
+    transition: all .7s;
+    overflow-x: hidden;
+}
+
+/* main nav style start */
+.main-nav {
+    width: 100vw;
+    height: 60px;
+    background-color: rgb(175, 67, 67);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: .8em;
+    display: block;
+}
+
+a:hover {
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 2px;
+    color: white
+}
+
+.nav-soil-type {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.soil-link-holder {
+    display: flex;
+    justify-content: space-around;
+}
+
+.soil-type-btn {
+    width: 100px;
+    padding: 5px 0;
+    border-radius: 5px;
+    border: 0;
+    display: none;
+    margin-right: 8%;
+}
+
+.soil-type-btn:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+@media (max-width:700px) {
+    .soil-type-btn {
+        display: block;
+    }
+
+    .nav-soil-type {
+        flex-direction: row;
+        justify-content: end;
+    }
+
+    .soil-link-holder {
+        position: absolute;
+        top: 60px;
+        background-color: rgb(175, 67, 67);
+        height: 200px;
+        flex-direction: column;
+        width: 200px;
+        right: 10px;
+        align-items: center;
+        z-index: 9999;
+        /* display: none; */
+    }
+
+    .soil-type-link-toggle {
+        display: none;
+    }
+}
+
+/* main nav style start */
+
+/* home-page style start */
+.home-page main {
+    display: flex;
+    width: 98vw;
+    margin: 50px auto;
+    align-items: center;
+    /* flex-direction: column; */
+}
+
+.home-intro,
+.home-hero {
+    width: 48%;
+    margin: 10px auto;
+}
+
+.home-hero img {
+    width: 90%;
+    max-width: 350px;
+}
+
+@media (max-width:700px) {
+    .home-page main {
+        flex-direction: column;
+    }
+
+    .home-intro,
+    .home-hero {
+        width: 98%;
+        margin: 10px auto;
+    }
+
+    .home-hero {
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+    }
+}
+
+/* home-page style end */
+
+/* soil page style start */
+.not-found {
+    width: max-content;
+    margin: 20vh auto;
+    color: red;
+    text-transform: capitalize;
+}
+
+.soil-info{
+    margin: 10px auto;
+    width:95vw;
+    display: flex;
+    flex-direction: column;
+}
+.soil-info img{
+    max-width: 350px;
+    border-radius: 5px;
+    margin:10px 0
+}
+.soil-info p{
+    margin:5px 0;
+    font-size: .8em;
+}
+span{
+    font-weight: 700;
+}
+/* soil page style end */
